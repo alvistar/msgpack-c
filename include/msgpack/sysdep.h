@@ -79,7 +79,7 @@
 
 #else /* _*/
 
-#include <arpa/inet.h>  /* __BYTE_ORDER */
+#include "sal-stack-lwip/lwip/include/ipv4/lwip/inet.h"  /* __BYTE_ORDER */
 #   if defined(linux)
 #       include <byteswap.h>
 #   endif

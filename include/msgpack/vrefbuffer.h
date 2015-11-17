@@ -21,14 +21,14 @@
 #include "zone.h"
 #include <stdlib.h>
 
-#ifndef _WIN32
-#include <sys/uio.h>
-#else
+//#ifndef _WIN32
+//#include <sys/uio.h>
+//#else
 struct iovec {
     void  *iov_base;
     size_t iov_len;
 };
-#endif
+//#endif
 
 #ifdef __cplusplus
 extern "C" {

@@ -100,12 +100,12 @@ FIND_PACKAGE (GTest)
 FIND_PACKAGE (ZLIB)
 FIND_PACKAGE (Threads)
 IF (GTEST_FOUND AND ZLIB_FOUND AND THREADS_FOUND)
-    OPTION (MSGPACK_BUILD_TESTS "Build msgpack tests." ON)
+    OPTION (MSGPACK_BUILD_TESTS "Build msgpack tests." OFF)
 ENDIF ()
-OPTION (MSGPACK_BUILD_EXAMPLES "Build msgpack examples." ON)
+OPTION (MSGPACK_BUILD_EXAMPLES "Build msgpack examples." OFF)
 
-OPTION (MSGPACK_ENABLE_CXX "Enable C++ interface." ON)
-OPTION (MSGPACK_ENABLE_SHARED "Build shared libaries in addition to static libraries." ON)
+OPTION (MSGPACK_ENABLE_CXX "Enable C++ interface." OFF)
+OPTION (MSGPACK_ENABLE_SHARED "Build shared libaries in addition to static libraries." OFF)
 
 INCLUDE (CheckCXXSourceCompiles)
 CHECK_CXX_SOURCE_COMPILES ("
